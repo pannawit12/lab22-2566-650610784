@@ -13,6 +13,9 @@ export const GET = async (request) => {
         mode: 'insensitive',
       },
     },
+    orderBy:{
+      courseNo : 'asc',
+    },
   });
 
   return NextResponse.json({ ok: true, courses });
